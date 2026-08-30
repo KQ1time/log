@@ -15,8 +15,9 @@ def write_log(log: str):
         f.write("\n")
 
 # Examples 
-new_log = create_log("INFO", "Program started")
-write_log(new_log)
+if __name__ == "__main__":
+    new_log = create_log("INFO", "Program started")
+    write_log(new_log)
 
-log_2 = create_log("INFO", "Program finished")
-write_log(log_2)
+    log_2 = create_log("INFO", "Program finished")
+    write_log(log_2)
